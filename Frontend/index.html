@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Quiz Website Quiz Master. Feel free for test your acknowledgements about almost everything!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="image icon" href="assets/icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <img src="assets/icons/logo.png" alt="logo_image" width="100" height="100">
+            <span>Quiz Master</span>
+        </div>
+        <div class="change__lang">
+            <label>PT</label>
+            <i class="bi bi-globe"></i>
+        </div>
+    </header>
+   <main>
+       <section class="wrapper">
+            <div class="left">
+                <h1>Jogue e aprenda!</h1>
+                <button type="button" id="enter__btn">Entrar</button>
+            </div>
+            <div class="right">
+                <img src="assets/images/bannerImg.gif" alt="banner_image" width="450" height="450">
+            </div>        
+       </section>
+       
+       <section class="popup">
+           <div class="popup__header">
+               <h2>Novo Jogador</h2>
+               <label for="input__text">Escolha um nome para avançar</label>
+               <i class="bi bi-x" id="close__btn"></i>
+        </div>
+            <form action="" id="form__popup">
+                <div class="input__box">
+                    <input type="text" id="username__input" placeholder="user_123">
+                    <span id="username__error" class="error__msg"></span>
+                </div>
+                <div class="input__box">
+                    <button type="submit" id="submit__btn">GO!</button>
+                </div>
+            </form>
+       </section>
+
+       <div id="welcome-msg__box">
+        <h4>Logado com Sucesso! <i class="bi bi-check-circle"></i></h4>
+        <p>Bem-vindo, <span id="username">Manuel Jaime</span>!</p>
+       </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+
+   <footer>
+    <p>Quiz Master 2024 - Todos os direitos reservados</p>
+   </footer>  
+</body>
+</html>
